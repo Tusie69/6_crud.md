@@ -1,0 +1,26 @@
+{
+  "name": "node-ts-mysql-crud",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "clean": "rimraf dist",
+    "build": "npm run clean && tsc",
+    "start": "node dist/index.js"
+  },
+
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^26.1.2",
+    "rimraf": "^5.0.0",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.12.0"
+  }
+}
